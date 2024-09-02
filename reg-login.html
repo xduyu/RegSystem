@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация и вход</h1>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'register')">Регистрация</button>
+            <button class="tablinks" onclick="openTab(event, 'login')">Вход</button>
+        </div>
+        <div id="register" class="tabcontent">
+            <form id="register-form">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="confirm-password">Подтвердите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <div id="error-message-register"></div>
+        </div>
+        <div id="login" class="tabcontent">
+            <form id="login-form">
+                <label for="username-login">Имя пользователя:</label>
+                <input type="text" id="username-login" name="username-login"><br><br>
+                <label for="password-login">Пароль:</label>
+                <input type="password" id="password-login" name="password-login"><br><br>
+                <button type="submit">Войти</button>
+            </form>
+            <div id="error-message-login"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
